@@ -1,0 +1,22 @@
+<configuration>
+    <property>
+        <name>hbase.cluster.distributed</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>hbase.rootdir</name>
+        <value>hdfs://ns1/hbase</value>
+    </property>
+    <!-- <property>
+        <name>hbase.master.port</name>
+        <value>hadoop3:60000</value>
+    </property> -->
+    <property>
+        <name>hbase.zookeeper.quorum</name>
+        <value>hadoop3,hadoop4,hadoop5</value>
+    </property>
+    <property>
+        <name>hbase.zookeeper.property.dataDir</name>
+        <value>/usr/local/zookeeper/data</value>
+    </property>
+</configuration>
